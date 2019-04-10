@@ -1,0 +1,124 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "John Doe",
+      "email": "john.doe@mail.com",
+      "password": "123abc",
+      "token": "abcd1234"
+    },
+    {
+      "id": 2,
+      "name": "Mary Doe",
+      "email": "mary.doe@mail.com",
+      "password": "123abc",
+      "token": "abcd5678"
+    }
+  ],
+  "resources": [
+    {
+      "id": 1,
+      "name": "menu-platforms"
+    },
+    {
+      "id": 2,
+      "name": "menu-products"
+    },
+    {
+      "id": 3,
+      "name": "platforms-1",
+      "owner": 1
+    },
+    {
+      "id": 4,
+      "name": "products-1",
+      "owner": 1
+    },
+    {
+      "id": 5,
+      "name": "products-2",
+      "owner": 1
+    },
+    {
+      "id": 6,
+      "name": "products-3",
+      "owner": 2
+    }
+  ],
+  "roles": [
+    {
+      "id": 1,
+      "user": 1,
+      "resource": 1,
+      "operation": "read"
+    },
+    {
+      "id": 2,
+      "user": 1,
+      "resource": 2,
+      "operation": "read"
+    },
+    {
+      "id": 3,
+      "user": 2,
+      "resource": 3,
+      "operation": "read"
+    },
+    {
+      "id": 4,
+      "user": 2,
+      "resource": 4,
+      "operation": "read"
+    },
+    {
+      "id": 5,
+      "user": 2,
+      "resource": 4,
+      "operation": "write"
+    },
+    {
+      "id": 6,
+      "user": 2,
+      "resource": 5,
+      "operation": "read"
+    },
+    {
+      "id": 7,
+      "user": 2,
+      "resource": 5,
+      "operation": "write"
+    },
+    {
+      "id": 8,
+      "user": 2,
+      "resource": 5,
+      "operation": "delete"
+    },
+    {
+      "id": 9,
+      "user": 2,
+      "resource": 2,
+      "operation": "read"
+    }
+  ],
+  "platforms": [
+    {
+      "name": "Plataforma Nova",
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "name": "Caneca"
+    },
+    {
+      "id": 2,
+      "name": "Blusa"
+    },
+    {
+      "id": 3,
+      "name": "Espelho"
+    }
+  ]
+}
